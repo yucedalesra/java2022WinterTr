@@ -1,7 +1,10 @@
-package AdvancedJavaPractice_HalukHoca;
+package _ucusProjesi;
 import java.util.Scanner;
+
 public class JavaAirlines {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         System.out.print("javaAirlines'a hos geldin AGAM..\n B C D rotasından birini seciniz : ");
         String city = scan.next().toUpperCase();
@@ -90,33 +93,33 @@ public class JavaAirlines {
                         System.out.println("   *****   ");
                         System.out.println("ucusunuz için bilet odemeniz : " + (priceD * 0.5 * 0.8) * 2 + " $");
                     } else System.out.println("hatalı veri giridiniz");
-                } else if (age >= 24 && age <= 65) {
-                    if (city.equals("B")) {
-                        if (flytype == 1) {
-                            System.out.println("   *****   ");
-                            System.out.println("ucusunuz için bilet odemeniz : " + priceB + " $");
-                        } else if (flytype == 2) {
-                            System.out.println("   *****   ");
-                            System.out.println("ucusunuz için bilet odemeniz : " + (priceB * 0.8) * 2 + " $");
-                        } else System.out.println("hatalı veri giridiniz");
-                    } else if (city.equals("C")) {
-                        if (flytype == 1) {
-                            System.out.println("   *****   ");
-                            System.out.println("ucusunuz için bilet odemeniz : " + priceC + " $");
-                        } else if (flytype == 2) {
-                            System.out.println("   *****   ");
-                            System.out.println("ucusunuz için bilet odemeniz : " + (priceC * 0.8) * 2 + " $");
-                        } else System.out.println("hatalı veri giridiniz");
-                    } else if (city.equals("D")) {
-                        if (flytype == 1) {
-                            System.out.println("   *****   ");
-                            System.out.println("ucusunuz için bilet odemeniz : " + priceD + " $");
-                        } else if (flytype == 2) {
-                            System.out.println("   *****   ");
-                            System.out.println("ucusunuz için bilet odemeniz : " + (priceD * 0.8) * 2 + " $");
-                        } else System.out.println("hatalı veri giridiniz");
-                    }
-                }else System.out.println("agam adam gibi yas gir :(");
+                } else System.out.println("agam adam gibi yas gir :(");
+            } else if (age >= 24 && age <= 65) {
+                if (city.equals("B")) {
+                    if (flytype == 1) {
+                        System.out.println("   *****   ");
+                        System.out.println("ucusunuz için bilet odemeniz : " + priceB + " $");
+                    } else if (flytype == 2) {
+                        System.out.println("   *****   ");
+                        System.out.println("ucusunuz için bilet odemeniz : " + (priceB * 0.8) * 2 + " $");
+                    } else System.out.println("hatalı veri giridiniz");
+                } else if (city.equals("C")) {
+                    if (flytype == 1) {
+                        System.out.println("   *****   ");
+                        System.out.println("ucusunuz için bilet odemeniz : " + priceC + " $");
+                    } else if (flytype == 2) {
+                        System.out.println("   *****   ");
+                        System.out.println("ucusunuz için bilet odemeniz : " + (priceC * 0.8) * 2 + " $");
+                    } else System.out.println("hatalı veri giridiniz");
+                } else if (city.equals("D")) {
+                    if (flytype == 1) {
+                        System.out.println("   *****   ");
+                        System.out.println("ucusunuz için bilet odemeniz : " + priceD + " $");
+                    } else if (flytype == 2) {
+                        System.out.println("   *****   ");
+                        System.out.println("ucusunuz için bilet odemeniz : " + (priceD * 0.8) * 2 + " $");
+                    } else System.out.println("hatalı veri giridiniz");
+                }
             } else System.out.println("agam henüz o gezegene ucus yok :)");
         }
     }
